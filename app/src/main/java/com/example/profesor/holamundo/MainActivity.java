@@ -57,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
         mTvContador.setText(String.valueOf(mContador));*/
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "Llamado onResume()");
+    }
 
     @Override
     protected void onPause() {
